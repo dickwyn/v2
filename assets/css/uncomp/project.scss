@@ -1,0 +1,35 @@
+.resume-subblock-alt {
+    margin: 0em 0em 2em
+}
+
+.item-subheading-alt {
+    padding: 0.38em 1em 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #757575;
+}
+
+.fa-file-code:hover {
+    color: #ef1c1c;
+    text-decoration: none;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    min-width: 10px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  
+  .badge.badge-outlined {
+    border-color: #ef1c1c;
+    color: #ef1c1c;
+  }

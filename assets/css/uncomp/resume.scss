@@ -21,30 +21,6 @@
     margin: 0em 0em 2em;
 }
 
-.resume-subblock-alt {
-    margin: 0em 0em 2em
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-h6.skill-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: black;
-}
-
-.skills-list li {
-    padding: 0em 0em !important;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: gray;
-}
-
 h5.resume-subheading {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -52,65 +28,4 @@ h5.resume-subheading {
     text-transform: uppercase;
     margin: 0 !important;
     padding-bottom: 0.8em;
-}
-
-.item-heading {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: black;
-}
-
-.item-period {
-    font-family: monospace;
-    color: #757575;
-    text-align: right;
-}
-
-.item-subheading {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #757575;
-}
-
-.item-subheading-alt {
-    padding: 0.38em 1em 0.5em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #757575;
-}
-
-.item-heading a {
-    color: black;
-    text-decoration: none;
-}
-
-.item-heading a:hover {
-    color: black;
-    text-decoration: none;
-    border-bottom: 2px #ef1c1c dotted;
-}
-
-.fa-file-code:hover {
-    color: #ef1c1c;
-    text-decoration: none;
-}
-
-.badge {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 6px;
-  border: 1px solid transparent;
-  min-width: 10px;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  border-radius: 5px;
-}
-
-.badge.badge-outlined {
-  border-color: #ef1c1c;
-  color: #ef1c1c;
 }

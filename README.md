@@ -4,7 +4,7 @@ Dickwyn's personal website. Access it on [www.dickwyn.xyz](https://www.dickwyn.x
 
 ## Project Dependencies
 
-This project uses several tools: 
+This project is built with:
 
 1. [NodeJS](http://nodejs.org)
 2. [Ruby](https://www.ruby-lang.org/en/downloads/)

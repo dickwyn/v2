@@ -7,6 +7,7 @@ var pug = require('gulp-pug');
 var deploy = require('gulp-gh-pages');
 var htmlmin = require('gulp-htmlmin');    
 var csso = require('gulp-csso');    
+var imagemin = require('gulp-imagemin');
 
 const BROWSERS = [
     'ie >= 10',
@@ -71,6 +72,16 @@ gulp.task('htmlmin', function () {
         }))
         .pipe(gulp.dest('_site'))
 });
+
+gulp.task('imagemin', function(){
+    return gulp.src('assets/images/pre/*')
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            optimizationLevel: 5
+        }))
+        .pipe(gulp.dest('assets/images'))
+})
 
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);

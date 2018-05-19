@@ -21,8 +21,12 @@ header {
     text-transform: uppercase;
 }
 
-a.hidden-link:hover {
-    color: black;
+a.hidden-link:hover p {
+    color: $primary-color;
+}
+
+.hidden-link:hover {
+    text-decoration: inherit;
 }
 
 .top-nav {

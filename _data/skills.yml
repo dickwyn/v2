@@ -1,5 +1,5 @@
 languages:
-  - item: Java S
+  - item: Java
   - item: C#
   - item: C/C++
   - item: SQL
@@ -29,4 +29,4 @@ interpersonal:
   - item: Leadership
   - item: Public Speaking
   - item: Management
-  - item: Event Planning
+  - item: Event Planning 

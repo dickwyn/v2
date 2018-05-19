@@ -8,39 +8,27 @@
                     h6.skill-title
                         |   Languages
                     ul.skills-list
-                        li Java
-                        li C#
-                        li C/C++
-                        li SQL
-                        li MATLAB
-                        li Python
-                        li Redy
+                        |   {% for language in site.data.skills.languages %}
+                        li {{ language.item }}
+                        |   {% endfor %}
                 .col-3
                     h6.skill-title
                         |   Frameworks
                     ul.skills-list
-                        li Bootstrap
-                        li .NET
-                        li Node
-                        li React
-                        li Angular
+                        |   {% for framework in site.data.skills.frameworks %}
+                        li {{ framework.item }}
+                        |   {% endfor %}
                 .col-3
                     h6.skill-title
                         |   Tools
                     ul.skills-list
-                        li Git &amp; GitHub
-                        li Photoshop
-                        li Illustrator
-                        li InDesign
-                        li Axure RP
-                        li PuTTY
+                        |   {% for tool in site.data.skills.tools %}
+                        li {{ tool.item }}
+                        |   {% endfor %}
                 .col-3
                     h6.skill-title
                         |   Interpersonal
                     ul.skills-list
-                        li Conflict Resolution
-                        li Teamwork
-                        li Leadership
-                        li Public Speaking
-                        li Management
-                        li Event Planning          
+                        |   {% for interpersonal in site.data.skills.interpersonal %}
+                        li {{ interpersonal.item }}
+                        |   {% endfor %}      

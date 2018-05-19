@@ -3,146 +3,21 @@ div.resume-block#project
         div.resume-wrapper
             h5.resume-subheading
                 |   Projects 
+            |   {% for project in site.data.projects %}
             .resume-subblock-alt
                 .row
                     .col.item-heading
-                        a(href="#" target="_blank")
-                            |   SFLE Knowledgebase 
+                        a(href="{{ project.url }}" target="_blank")
+                            |   {{ project.name }} 
                             i.far.fa-file-code
                 .row   
                     .col.item-subheading-alt
-                        |   Designed an open sourced database (MySQL) where researchers can upload their solutions and also to design a web interface (Node.js) so that the general public can explore the solutions.
+                        |   {{ project.description }}
                 .row
-                    .col    
+                    
+                    .col   
+                        |   {% for tech in project.tech %} 
                         .badge.badge-outlined    
-                            |   MySQL
-                        .badge.badge-outlined   
-                            |   Axure RP
-                        .badge.badge-outlined   
-                            |   Node.js   
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   dickwyn.xyz 
-                            i.far.fa-file-code
-                .row   
-                    .col.item-subheading-alt
-                        |   The third iteration of my personal website. With more information and was designed to perform fast.
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   HTML
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   2018 International Student Survey
-                .row   
-                    .col.item-subheading-alt
-                        |   Designed a survey to indentify the needs and concerns of 10,000+ international students on campus. Also worked on increasing the awareness of CIS in relation to the function of the coalition within the university community.
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   Microsoft Excel
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   CIS Online 
-                            i.far.fa-file-code
-                .row   
-                    .col.item-subheading-alt
-                        |   A website for the ASU Coalition of International Students.
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   HTML
-                        .badge.badge-outlined   
-                            |   Bootstrap
-                        .badge.badge-outlined   
-                            |   jQuery
-                        .badge.badge-outlined   
-                            |   JavaScript
-                        .badge.badge-outlined   
-                            |   CSS
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   ReverseShop
-                .row   
-                    .col.item-subheading-alt
-                        |   ReverseShop is an online marketplace that utilizes a unique price drop formula to help sellers with a deadline sell fast and for buyers to score some great deals.
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   WordPress
-                        .badge.badge-outlined   
-                            |   php
-                        .badge.badge-outlined   
-                            |   WooCommerce
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   Sound Waves
-                .row   
-                    .col.item-subheading-alt
-                        |   Prototyped a side-scrolling mobile game which includes a scoring system, game streaks and a theme for SOUNDS Academy to help underprivileged students practice string instruments.
-                .row   
-                    .col.item-subheading-alt
-                        |   🏆 Won EPICS Catalyst Award
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   Proto.io
-                        .badge.badge-outlined   
-                            |   Swift
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   International Night 2016 Promotional Video 
-                            i.fab.fa-youtube
-                .row   
-                    .col.item-subheading-alt
-                        |   Directed and produced 12 short videos (approx 2 minutes long) with various student organizations at ASU to promote International Night which is the school's biggest cultural event.
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   Premiere Pro
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   Sunway ADTP 
-                            i.far.fa-file-code
-                .row   
-                    .col.item-subheading-alt
-                        |   Designed and built a responsive website with the Bootstrap framework for the American Degree Transfer Program at Sunway University which is targeted towards prospective students.
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   XHTML
-                        .badge.badge-outlined   
-                            |   CSS
-                        .badge.badge-outlined   
-                            |   JavaScript
-                        .badge.badge-outlined   
-                            |   Bootstrap
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="#" target="_blank")
-                            |   OneLap 
-                            i.far.fa-file-code
-                .row   
-                    .col.item-subheading-alt
-                        |   Implemented an autonomous navigation algorithm in C that aligned the vehicle to the center of two white lines. Model race car built with a FRDM-KL25Z board, a line scan camera and a servo.
-                .row
-                    .col    
-                        .badge.badge-outlined    
-                            |   C/C++
-                        .badge.badge-outlined   
-                            |   Tcl
+                            |   {{ tech.item }}
+                        |   {% endfor %}
+            |   {% endfor %}

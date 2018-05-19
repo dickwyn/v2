@@ -31,7 +31,8 @@ This project is built with:
 ## Folder Structure
 
     .
-    ├── .public             
+    ├── .public       
+    ├── _data               # YAML (.yml) files to support liquit templates 
     ├── _includes           # Folder for the broken up components
     ├── _layouts            # Default layout for page types
     ├── _pugfiles           # Uncompiled .pug scripts

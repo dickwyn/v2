@@ -32,7 +32,7 @@ This project is built with:
 
     .
     ├── .public       
-    ├── _data               # YAML (.yml) files to support liquit templates 
+    ├── _data               # YAML (.yml) files to support liquid templates 
     ├── _includes           # Folder for the broken up components
     ├── _layouts            # Default layout for page types
     ├── _pugfiles           # Uncompiled .pug scripts

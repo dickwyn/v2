@@ -1,0 +1,164 @@
+header {
+    min-height: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+.hidden-link p {
+    color: whitesmoke;
+    text-decoration: none !important;
+    margin: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+a.hidden-link:hover {
+    color: black;
+}
+
+.top-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 2em 0em;
+} 
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    border: 0px solid blue;
+    margin-bottom: -48px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    background-color: white;
+    max-width: 640px;
+    width: 100%;
+    margin: auto;
+    border-radius: 3px !important;
+
+}
+
+.content {
+    padding: 2em 2em;
+}
+
+.name {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.headline {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+.intro {
+    padding: 1em 0em 0em;
+}
+
+.intro p {
+    font-size: 18px;
+    margin: 0em;
+    color: black;
+}
+
+.title {
+    text-align: center;
+    margin: 2em 0em 0em;
+    color: black;
+}
+
+.title p {
+    margin: 0em;
+}
+
+.title button {
+    margin: 1em 0em 0em;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    padding: 0.6em 0.5em 0.3em !important;
+}
+
+.content .social {
+    margin: 1em 0em 0em;
+}
+
+.list-social-icons {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-social-icons a {
+    color: #455A64;
+}
+
+.twitter a:hover {
+    color: #1da1f2;
+}
+
+.facebook a:hover {
+    color: #3b5998;
+}
+
+.linkedin a:hover {
+    color: #0077b5;
+}
+
+.github a:hover {
+    color: #333;
+}
+
+.snapchat a:hover {
+    color: #fffc00;
+}
+
+.instagram a:hover {
+    color: #fd1d1d;
+}
+
+.weixin a:hover {
+    color: #7bb32e;
+}
+
+.googleplus a:hover {
+    color: #dd4b39;
+}

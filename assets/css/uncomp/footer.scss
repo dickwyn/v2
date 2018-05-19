@@ -1,0 +1,38 @@
+footer p {
+    font-family: monospace;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+footer .social ul {
+    list-style: none;
+}
+
+footer .social li {
+    display: inline;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1.28em;
+    color: white;
+}
+
+footer .social a:link {
+    color: #FFFFFF;
+}
+
+footer .social a:visited {
+    color: #FFFFFF;
+}
+
+footer .social a:hover {
+    color: #FFCDD2;
+    text-decoration: none;
+    border-bottom: 2px #FFCDD2 dotted;
+}
+
+footer .social a:active {
+    color: #BDBDBD;
+    text-decoration: none;
+}

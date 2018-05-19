@@ -43,7 +43,7 @@ This project uses several tools:
     │   │   └── pre         # Original image files before compression
     │   └── js              # All additional scripts (.js)
     ├── .gitattributes
-    ├── .gitignore          # Folder that are ignored by git
+    ├── .gitignore          # Folders and files that are ignored by git
     ├── CNAME               # Used for GitHub pages custom domain
     ├── README.md           # Readme file for repository
     ├── _config.yml         # Stores pre-determined values

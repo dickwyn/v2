@@ -4,7 +4,7 @@ Dickwyn's personal website. Access it on [www.dickwyn.xyz](https://www.dickwyn.x
 
 ## Project Dependencies
 
-This project uses several tools: 
+This project is built with:
 
 1. [NodeJS](http://nodejs.org)
 2. [Ruby](https://www.ruby-lang.org/en/downloads/)
@@ -27,3 +27,27 @@ This project uses several tools:
 
 **Production Mode**
 1. `$ gulp gh-pages`
+
+## Folder Structure
+
+    .
+    ├── .public             
+    ├── _includes           # Folder for the broken up components
+    ├── _layouts            # Default layout for page types
+    ├── _pugfiles           # Uncompiled .pug scripts
+    ├── _site               # Tools and utilities
+    ├── assets              # All additional assets of the projects
+    │   ├── css             # All stylesheets (.css and .scss)
+    │   │   └── uncomp      # All unprocessed .scss files
+    │   ├── images          # All images used by the project
+    │   │   └── pre         # Original image files before compression
+    │   └── js              # All additional scripts (.js)
+    ├── .gitattributes
+    ├── .gitignore          # Folders and files that are ignored by git
+    ├── CNAME               # Used for GitHub pages custom domain
+    ├── README.md           # Readme file for repository
+    ├── _config.yml         # Stores pre-determined values
+    ├── gulpfile.js         # Automate compilation of pug, sass and jekyll
+    ├── index.html          # main entry point
+    ├── package-lock.json
+    └── package.json        # Document node dependencies

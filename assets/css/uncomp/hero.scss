@@ -30,17 +30,6 @@ a.hidden-link:hover {
     top: 0;
     width: 100%;
 }
-
-.bottom-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 2em 0em;
-} 
-
 .profile-picture {
     width: 150px;
     height: 150px;
@@ -132,33 +121,39 @@ li {
 }
 
 .twitter a:hover {
-    color: #1da1f2;
+    color: $twitter;
 }
 
 .facebook a:hover {
-    color: #3b5998;
+    color: $facebook;
 }
 
 .linkedin a:hover {
-    color: #0077b5;
+    color: $linkedin;
 }
 
 .github a:hover {
-    color: #333;
+    color: $github;
 }
 
 .snapchat a:hover {
-    color: #fffc00;
+    color: $snapchat;
 }
 
 .instagram a:hover {
-    color: #fd1d1d;
+    color: $instagram;
 }
 
 .weixin a:hover {
-    color: #7bb32e;
+    color: $weixin;
 }
 
-.googleplus a:hover {
-    color: #dd4b39;
-}
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 2em 0em;
+} 

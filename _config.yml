@@ -1,4 +1,15 @@
-name: Your New Jekyll Site
+# Site settings
+name: Dick Wyn Yong
+title: Dick Wyn Yong | Student, Blogger, Designer
+description: Awesome description
+url: https://dickwyn.xyz
+baseurl: ""
+email: dickwyn@outlook.com
+cover: https://www.dickwyn.xyz/img/dickwyn-pc.jpg
+logo: https://www.dickwyn.xyz/img/dickwyn-emblem.png
+resume: https://www.dickwyn.xyz/img/dickwyn-emblem.png
+
+# Build settings
 markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]

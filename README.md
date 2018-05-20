@@ -31,7 +31,7 @@ This project is built with:
 ## Folder Structure
 
     .
-    ├── .public       
+    ├── .publish       
     ├── _data               # YAML (.yml) files to support liquid templates 
     ├── _includes           # Folder for the broken up components
     ├── _layouts            # Default layout for page types

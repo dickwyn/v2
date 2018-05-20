@@ -1,15 +1,16 @@
-ul {
+#skill ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
-.skill-list li {
+#skill li {
     padding: 0em 0em !important;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: gray;
+    color: $secondary-text;
+    padding: 0em 2em;
 }
 
 @media screen and (max-width: 640px) {

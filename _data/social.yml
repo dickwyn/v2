@@ -1,0 +1,23 @@
+- name: Email
+  url: mailto:dickwyn@outlook.com
+  class: email fas fa-envelope
+
+- name: Twitter
+  url: https://www.twitter.com/dickwyn
+  class: twitter fab fa-twitter
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/dickwyn
+  class: linkedin fab fa-linkedin-in
+
+- name: Instagram
+  url: https://www.instagram.com/dickwyn
+  class: instagram fab fa-instagram
+
+- name: GitHub
+  url: https://www.github.com/dickwyn
+  class: github fab fa-github
+
+- name: WeChat
+  url: weixin.html
+  class: weixin fab fa-weixin

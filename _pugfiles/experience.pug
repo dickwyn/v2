@@ -1,15 +1,16 @@
 section#experience
     .resume-wrapper
-        div
-            .resume-heading
-                |   Experience
-        div
-            |   {% for experience in site.data.experiences %}
-            .resume-wrapper-nested
-                .role
-                    |   {{ experience.role }}
-                .time
-                    |   {{ experience.time }}  
-                .company
-                    |   {{ experience.company }}
-            |   {% endfor %}
+        .container
+            div
+                .resume-heading
+                    |   Experience
+            div
+                |   {% for experience in site.data.experiences %}
+                .resume-wrapper-nested
+                    .role
+                        |   {{ experience.role }}
+                    .time
+                        |   {{ experience.time }}  
+                    .company
+                        |   {{ experience.company }}
+                |   {% endfor %}

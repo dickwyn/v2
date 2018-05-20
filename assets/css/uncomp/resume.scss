@@ -17,7 +17,6 @@ section div {
     font-size: 18px;
     line-height: 1.5em;
     color: $primary-text;
-    padding: 0em 1.5em;
     margin: 0.5em 0em;
 }
 
@@ -38,7 +37,6 @@ section div {
     font-size: 22px;
     color: $primary-text;
     text-transform: uppercase;
-    padding: 0em 1.2em;
     margin: 0.8em 0em 0em;
 }
 
@@ -46,6 +44,10 @@ section div {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: $primary-text;
+}
+
+section .container {
+    padding: 0em 2em;
 }
 
 @media screen and (max-width: 640px) {

@@ -1,20 +1,21 @@
 section#project
     .resume-wrapper
-        div
-            .resume-heading
-                |   Projects
-        div
-            |   {% for project in site.data.projects %}
-            .resume-wrapper-nested
-                div
-                    a(href="{{ project.url }}" target="_blank")
-                        |   {{ project.name }} 
-                        i.far.fa-file-code
-                div  
-                    |   {{ project.description }}
-                div        
-                    |   {% for tech in project.tech %} 
-                    .badge   
-                        |   {{ tech.item }}
-                    |   {% endfor %}
-            |   {% endfor %}
+        .container
+            div
+                .resume-heading
+                    |   Projects
+            div
+                |   {% for project in site.data.projects %}
+                .resume-wrapper-nested
+                    div
+                        a(href="{{ project.url }}" target="_blank")
+                            |   {{ project.name }} 
+                            i.far.fa-file-code
+                    div  
+                        |   {{ project.description }}
+                    div        
+                        |   {% for tech in project.tech %} 
+                        .badge   
+                            |   {{ tech.item }}
+                        |   {% endfor %}
+                |   {% endfor %}

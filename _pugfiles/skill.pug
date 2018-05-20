@@ -1,34 +1,35 @@
 section#skill
     .resume-wrapper
-        div
-            h5.resume-heading
-                |   Skills
-        .resume-wrapper-nested
-            .div
-                .resume-subheading
-                    |   Languages
-                ul.skill-list
-                    |   {% for language in site.data.skills.languages %}
-                    li {{ language.item }}
-                    |   {% endfor %}
-            .div
-                .resume-subheading
-                    |   Frameworks
-                ul.skill-list
-                    |   {% for framework in site.data.skills.frameworks %}
-                    li {{ framework.item }}
-                    |   {% endfor %}
-            .div
-                .resume-subheading
-                    |   Tools
-                ul.skill-list
-                    |   {% for tool in site.data.skills.tools %}
-                    li {{ tool.item }}
-                    |   {% endfor %}
-            .div
-                .resume-subheading
-                    |   Interpersonal
-                ul.skill-list
-                    |   {% for interpersonal in site.data.skills.interpersonal %}
-                    li {{ interpersonal.item }}
-                    |   {% endfor %}
+        .container
+            div
+                h5.resume-heading
+                    |   Skills
+            .resume-wrapper-nested
+                div
+                    .resume-subheading
+                        |   Languages
+                    ul
+                        |   {% for language in site.data.skills.languages %}
+                        li {{ language.item }}
+                        |   {% endfor %}
+                div
+                    .resume-subheading
+                        |   Frameworks
+                    ul
+                        |   {% for framework in site.data.skills.frameworks %}
+                        li {{ framework.item }}
+                        |   {% endfor %}
+                div
+                    .resume-subheading
+                        |   Tools
+                    ul
+                        |   {% for tool in site.data.skills.tools %}
+                        li {{ tool.item }}
+                        |   {% endfor %}
+                div
+                    .resume-subheading
+                        |   Interpersonal
+                    ul
+                        |   {% for interpersonal in site.data.skills.interpersonal %}
+                        li {{ interpersonal.item }}
+                        |   {% endfor %}

@@ -1,15 +1,18 @@
 footer
     .wrapper
-        div
-            .nested
-                |   {% for sm in site.data.social %}
-                div
-                    span.text
-                        a(href="{{ sm.url }}" target="_blank")
-                            |   {{ sm.name }}
-                    span.icon
-                        a(class="{{ sm.class }}" href="{{ sm.url }}" target="_blank")
-                |   {% endfor %}
-        div.copyright
-            i.fas.fa-copyright(data-fa-transform: "shrink-2")
-            |   2018 - Dick Wyn Yong
+        .container
+            div
+                .nested
+                    |   {% for sm in site.data.social %}
+                    div
+                        span.text
+                            a(class="{{ sm.class }}" href="{{ sm.url }}" target="_blank")
+                                |   {{ sm.name }}
+                        span.icon
+                            a(class="{{ sm.class }} {{ sm.fa }}" href="{{ sm.url }}" target="_blank")
+                    |   {% endfor %}
+            div.copyright
+                .nested
+                    div
+                        i.fas.fa-copyright(data-fa-transform: "shrink-2")
+                        |   {{ site.year }} - {{ site.name }}

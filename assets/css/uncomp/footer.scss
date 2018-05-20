@@ -1,13 +1,22 @@
 footer .wrapper {
     display: grid;
-    margin: 0em 3em;
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    justify-self: center;
 }
 
 footer .nested {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin: 0em;
-    padding: 0em;
+    grid-gap: 1em;
+}
+
+footer .copyright .nested {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 footer .nested div {
@@ -17,6 +26,13 @@ footer .nested div {
 footer a {
     font-size: 1.5em;
     text-decoration: none;
+}
+
+footer .text a {
+    font-family: monospace;
+    text-transform: lowercase;
+    color: $text-icons;
+    font-size: 1em;
 }
 
 footer .icon a {
@@ -52,8 +68,7 @@ footer .icon a {
     font-family: monospace;
     text-transform: uppercase;
     color: $text-icons;
-    justify-self: center;
-    margin: 2em;
+    margin: 2em 0em 3.8em;
 }
 
 i.fas.fa-copyright {
@@ -62,12 +77,47 @@ i.fas.fa-copyright {
 }
 
 @media (min-width: 641px) {
+    span .email:hover {
+        text-decoration: none;
+        border-bottom: 3px $primary-color dotted;
+    }
+
+    span .twitter:hover {
+        text-decoration: none;
+        border-bottom: 3px $twitter dotted;
+    }
+    
+    span .linkedin:hover {
+        text-decoration: none;
+        border-bottom: 3px $linkedin dotted;
+    }
+    
+    span .instagram:hover {
+        text-decoration: none;
+        border-bottom: 3px $instagram dotted;
+    }
+    
+    span .github:hover {
+        text-decoration: none; 
+        border-bottom: 3px $github dotted;
+    }
+    
+    span .weixin:hover {
+        text-decoration: none;
+        border-bottom: 3px $weixin dotted;
+    }
+    
     span.icon {
         display:none
     }
 
     span.text {
         display:inline-block
+    }
+
+    footer .wrapper {
+        display: grid;
+        margin: 0em 0em;
     }
 }
 

@@ -1,23 +1,20 @@
-div.resume-block#project
-    div.container
-        div.resume-wrapper
-            h5.resume-subheading
-                |   Projects 
+section#project
+    .resume-wrapper
+        div
+            .resume-heading
+                |   Projects
+        div
             |   {% for project in site.data.projects %}
-            .resume-subblock-alt
-                .row
-                    .col.item-heading
-                        a(href="{{ project.url }}" target="_blank")
-                            |   {{ project.name }} 
-                            i.far.fa-file-code
-                .row   
-                    .col.item-subheading-alt
-                        |   {{ project.description }}
-                .row
-                    
-                    .col   
-                        |   {% for tech in project.tech %} 
-                        .badge.badge-outlined    
-                            |   {{ tech.item }}
-                        |   {% endfor %}
+            .resume-wrapper-nested
+                div
+                    a(href="{{ project.url }}" target="_blank")
+                        |   {{ project.name }} 
+                        i.far.fa-file-code
+                div  
+                    |   {{ project.description }}
+                div        
+                    |   {% for tech in project.tech %} 
+                    .badge   
+                        |   {{ tech.item }}
+                    |   {% endfor %}
             |   {% endfor %}

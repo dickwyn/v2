@@ -1,31 +1,20 @@
-.item-heading a {
-    color: black;
-    text-decoration: none;
+#experience .resume-wrapper-nested {
+    grid-template-columns: 2fr 1fr;
 }
 
-.item-heading a:hover {
-    color: black;
-    text-decoration: none;
-    border-bottom: 2px #ef1c1c dotted;
-}
-
-.experience-block {
-    margin: 0em 0em 1em;
-}
-
-.item-heading {
+.role {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: black;
 }
 
-.item-period {
+.time {
     font-family: monospace;
     color: #757575;
     text-align: right;
 }
 
-.item-subheading {
+.company {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #757575;

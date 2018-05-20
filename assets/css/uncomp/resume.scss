@@ -21,11 +21,18 @@ section div {
     margin: 0.5em 0em;
 }
 
+.resume-wrapper-nested {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0em;
+    padding: 0em;
+}
+
 .resume-block {
     margin: 0em 0em 2em;
 }
 
-.resume-subheading {
+.resume-heading {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -33,6 +40,12 @@ section div {
     text-transform: uppercase;
     padding: 0em 1.2em;
     margin: 0.8em 0em 0em;
+}
+
+.resume-subheading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: $primary-text;
 }
 
 @media screen and (max-width: 640px) {

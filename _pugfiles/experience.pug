@@ -1,16 +1,15 @@
-.resume-block#experience
-    .container
-        .resume-wrapper
-            h5.resume-subheading
+section#experience
+    .resume-wrapper
+        div
+            .resume-heading
                 |   Experience
+        div
             |   {% for experience in site.data.experiences %}
-            .experience-block
-                .row
-                    .col-8.item-heading
-                        |   {{ experience.role }}
-                    .col-4.item-period
-                        |   {{ experience.time }}
-                .row   
-                    .col.item-subheading
-                        |   {{ experience.company }}
+            .resume-wrapper-nested
+                .role
+                    |   {{ experience.role }}
+                .time
+                    |   {{ experience.time }}  
+                .company
+                    |   {{ experience.company }}
             |   {% endfor %}

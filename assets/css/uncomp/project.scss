@@ -1,17 +1,5 @@
-.resume-subblock-alt {
-    margin: 0em 0em 2em
-}
-
-.item-subheading-alt {
-    padding: 0.38em 1em 0.5em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #757575;
-}
-
-.fa-file-code:hover {
-    color: #ef1c1c;
-    text-decoration: none;
+#project .resume-wrapper-nested {
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .badge {
@@ -27,9 +15,6 @@
     white-space: nowrap;
     vertical-align: middle;
     border-radius: 5px;
-  }
-  
-  .badge.badge-outlined {
     border-color: #ef1c1c;
     color: #ef1c1c;
-  }
+}

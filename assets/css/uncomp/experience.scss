@@ -1,11 +1,14 @@
 #experience .resume-wrapper-nested {
     grid-template-columns: 2fr 1fr;
+    margin: 0em 0em 1em;
+    padding: 0em;
 }
 
 .role {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: black;
+    font-size: 20px;
+    color: $primary-text;
 }
 
 .time {
@@ -17,5 +20,20 @@
 .company {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #757575;
+    color: $secondary-text;
+}
+
+.containers {
+    padding: 0em 2em;
+}
+
+@media screen and (max-width: 640px) {
+    #experience .resume-wrapper-nested {
+        grid-template-columns: 1fr;
+        margin: 0em 0em 2em;
+    }
+
+    .time {
+        text-align: left;
+    }
 }

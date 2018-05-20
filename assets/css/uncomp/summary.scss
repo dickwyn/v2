@@ -1,3 +1,7 @@
+#summmary .resume-wrapper-nested {
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+
 #summary button {
     color: $secondary-text;
     background-color: transparent;
@@ -11,6 +15,10 @@
 
 i.far.fa-envelope {
     color: $secondary-text;
+}
+
+.button-wrapper {
+    padding: 0em 0em 1em;
 }
 
 #summary button:hover {

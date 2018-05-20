@@ -2,19 +2,39 @@
     grid-template-columns: repeat(1, 1fr);
 }
 
+#project .resume-wrapper-nested div {
+    padding: 0em;
+}
+
+#project a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#project i {
+    font-size: 0.8em;
+}
+
+.badge-wrapper {
+    margin: 0em 0em 2.5em 0em;
+}
+
 .badge {
     display: inline-block;
     font-size: 11px;
-    font-weight: 600;
     padding: 3px 6px;
-    border: 1px solid transparent;
-    min-width: 10px;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
+    border: 1px solid $primary-color;
     border-radius: 5px;
-    border-color: #ef1c1c;
-    color: #ef1c1c;
+    color: $primary-color;
+    margin: 0.5em 0.5em 0em 0em;
+}
+
+.badge p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0em 0.38em;
+    margin: 0em;
+    color: $primary-color;
 }

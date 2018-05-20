@@ -1,5 +1,5 @@
 section div {
-    padding: 0.3em 0em 0.8em;
+    padding: 0.3em 0em 0.5em;
 }
 
 .resume-wrapper {
@@ -27,17 +27,13 @@ section div {
     padding: 0em;
 }
 
-.resume-block {
-    margin: 0em 0em 2em;
-}
-
 .resume-heading {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
     color: $primary-text;
     text-transform: uppercase;
-    margin: 0.8em 0em 0em;
+    margin: 1em 0em 0em;
 }
 
 .resume-subheading {
@@ -48,6 +44,11 @@ section div {
 
 section .container {
     padding: 0em 2em;
+}
+
+section a {
+    text-decoration: none;
+    color: $primary-text;
 }
 
 @media screen and (max-width: 640px) {

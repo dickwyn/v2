@@ -3,25 +3,25 @@
   class: email 
   fa: fas fa-envelope
 
-- name: Twitter
-  url: https://www.twitter.com/dickwyn
-  class: twitter 
-  fa: fab fa-twitter
-
-- name: LinkedIn
-  url: https://www.linkedin.com/in/dickwyn
-  class: linkedin 
-  fa: fab fa-linkedin-in
+- name: GitHub
+  url: https://www.github.com/dickwyn
+  class: github 
+  fa: fab fa-github
 
 - name: Instagram
   url: https://www.instagram.com/dickwyn
   class: instagram 
   fa: fab fa-instagram
 
-- name: GitHub
-  url: https://www.github.com/dickwyn
-  class: github 
-  fa: fab fa-github
+- name: LinkedIn
+  url: https://www.linkedin.com/in/dickwyn
+  class: linkedin 
+  fa: fab fa-linkedin-in
+
+- name: Twitter
+  url: https://www.twitter.com/dickwyn
+  class: twitter 
+  fa: fab fa-twitter
 
 - name: WeChat
   url: weixin.html

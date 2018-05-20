@@ -10,12 +10,13 @@ section#project
                     div
                         a(href="{{ project.url }}" target="_blank")
                             |   {{ project.name }} 
-                            i.far.fa-file-code
-                    div  
-                        |   {{ project.description }}
-                    div        
+                            i(class="{{ project.class }}")
+                    div
+                        p 
+                            |   {{ project.description }}
+                    div.badge-wrapper     
                         |   {% for tech in project.tech %} 
                         .badge   
-                            |   {{ tech.item }}
+                            p   {{ tech.item }}
                         |   {% endfor %}
                 |   {% endfor %}

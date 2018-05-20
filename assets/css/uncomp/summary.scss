@@ -1,17 +1,22 @@
-.item-heading {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color: black;
+#summary button {
+    color: $secondary-text;
+    background-color: transparent;
+    border: 1px solid $secondary-text;
+    border-radius: 5px;
+    padding: 9px 15px;
+    font-size: 16px;
+    margin: 1em auto 0em;
+    display: block;
 }
 
-.item-period {
-    font-family: monospace;
-    color: #757575;
-    text-align: right;
+i.far.fa-envelope {
+    color: $secondary-text;
 }
 
-.item-subheading {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #757575;
+#summary button:hover {
+    background-color: $secondary-text;
+    color: $text-icons;
+    i.far.fa-envelope {
+        color: $text-icons;
+    }
 }

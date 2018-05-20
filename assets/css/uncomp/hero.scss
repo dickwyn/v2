@@ -53,7 +53,7 @@ a.hidden-link:hover p {
 .header-body .wrapper {
     display: grid;
     background-color: white;
-    max-width: 620px;
+    max-width: 629px;
     width: 100%;
     margin: auto;
     border-radius: 3px !important;
@@ -64,33 +64,6 @@ a.hidden-link:hover p {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     margin: 0em 5em 1em;
-}
-
-@media screen and (max-width: 640px) {
-    .profile-picture {
-        width: 128px;
-        height: 128px;
-    }
-
-    p.name {
-        font-size: 28px;
-    }
-
-    p.headline {
-        font-size: 18px;
-    }
-    
-    p.description {
-        font-size: 14px;
-    }
-
-    .header-body .wrapper {
-        width: 90%;
-    }
-
-    .nested {
-        margin: 0em 2em 1em;
-    }
 }
 
 p.name {
@@ -174,4 +147,31 @@ div.weixin a {
 
 i.fas.fa-chevron-circle-down {
     color: $text-icons;
+}
+
+@media screen and (max-width: 640px) {
+    .profile-picture {
+        width: 128px;
+        height: 128px;
+    }
+
+    p.name {
+        font-size: 28px;
+    }
+
+    p.headline {
+        font-size: 18px;
+    }
+    
+    p.description {
+        font-size: 14px;
+    }
+
+    .header-body .wrapper {
+        width: 90%;
+    }
+
+    .nested {
+        margin: 0em 2em 1em;
+    }
 }

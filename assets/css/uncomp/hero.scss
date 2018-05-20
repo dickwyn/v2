@@ -53,7 +53,7 @@ a.hidden-link:hover p {
 .header-body .wrapper {
     display: grid;
     background-color: white;
-    max-width: 640px;
+    max-width: 620px;
     width: 100%;
     margin: auto;
     border-radius: 3px !important;
@@ -63,15 +63,35 @@ a.hidden-link:hover p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    margin: 0em 5em 1em;
 }
 
-/*.wrapper > div {
-    background: $divider-color;
-}
+@media screen and (max-width: 640px) {
+    .profile-picture {
+        width: 128px;
+        height: 128px;
+    }
 
-.wrapper > div:nth-child(odd) {
-    background: $secondary-text;
-}*/
+    p.name {
+        font-size: 28px;
+    }
+
+    p.headline {
+        font-size: 18px;
+    }
+    
+    p.description {
+        font-size: 14px;
+    }
+
+    .header-body .wrapper {
+        width: 90%;
+    }
+
+    .nested {
+        margin: 0em 2em 1em;
+    }
+}
 
 p.name {
     font-family: 'Roboto Condensed', sans-serif;
@@ -106,9 +126,9 @@ button.blogs {
     display: block;
 }
 
-button:hover {
+button.blogs:hover {
     background-color: $primary-color;
-    color: white;
+    color: $text-icons;
 }
 
 p.description {
@@ -116,6 +136,22 @@ p.description {
     padding: 0em 2em;
     line-height: 1.5em;
     font-size: 16px;
+}
+
+.instagram a:hover {
+    color: $instagram;
+}
+
+.linkedin a:hover {
+    color: $linkedin;
+}
+
+.github a:hover {
+    color: $github;
+}
+
+.weixin a:hover {
+    color: $weixin;
 }
 
 div.instagram a,

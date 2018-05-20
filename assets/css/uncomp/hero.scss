@@ -12,8 +12,14 @@ header {
     min-height: 100vh;
 }
 
+.top-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .hidden-link p {
-    color: whitesmoke;
+    color: white;
     text-decoration: none !important;
     margin: 1em;
     font-family: 'Roboto Condensed', sans-serif;
@@ -21,19 +27,14 @@ header {
     text-transform: uppercase;
 }
 
+a.hidden-link {
+    text-decoration: none;
+}
+
 a.hidden-link:hover p {
     color: $primary-color;
 }
 
-.hidden-link:hover {
-    text-decoration: inherit;
-}
-
-.top-nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
 .profile-picture {
     width: 150px;
     height: 150px;
@@ -49,107 +50,79 @@ a.hidden-link:hover p {
     background-size: cover;
 }
 
-.wrapper {
+.header-body .wrapper {
+    display: grid;
     background-color: white;
     max-width: 640px;
     width: 100%;
     margin: auto;
     border-radius: 3px !important;
-
 }
 
-.content {
-    padding: 2em 2em;
+.nested {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 
-.name {
+/*.wrapper > div {
+    background: $divider-color;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: $secondary-text;
+}*/
+
+p.name {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: center;
+    margin: 1.5em 0em 0em;
+    padding: 0.38em;
 }
 
-.headline {
+p.headline {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 200;
     font-size: 22px;
     letter-spacing: 2px;
     text-transform: lowercase;
-}
-
-.intro {
-    padding: 1em 0em 0em;
-}
-
-.intro p {
-    font-size: 18px;
-    margin: 0em;
-    color: black;
-}
-
-.title {
     text-align: center;
-    margin: 2em 0em 0em;
-    color: black;
-}
-
-.title p {
     margin: 0em;
+    padding: 0.38em;
 }
 
-.title button {
-    margin: 1em 0em 0em;
+button.blogs {
+    color: $primary-text;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    padding: 9px 15px;
+    font-size: 16px;
+    margin: 0.5em auto; 
+    display: block;
 }
 
-ul {
-    width: 100%;
-    text-align: center;
+button:hover {
+    background-color: $primary-color;
+    color: white;
 }
 
-li {
-    padding: 0.6em 0.5em 0.3em !important;
+p.description {
+    font-family: 'Roboto', sans-serif;
+    padding: 0em 2em;
+    line-height: 1.5em;
+    font-size: 16px;
 }
 
-.content .social {
-    margin: 1em 0em 0em;
-}
-
-.list-social-icons {
-    margin: 0px;
-    padding: 0px;
-}
-
-.list-social-icons a {
-    color: #455A64;
-}
-
-.twitter a:hover {
-    color: $twitter;
-}
-
-.facebook a:hover {
-    color: $facebook;
-}
-
-.linkedin a:hover {
-    color: $linkedin;
-}
-
-.github a:hover {
-    color: $github;
-}
-
-.snapchat a:hover {
-    color: $snapchat;
-}
-
-.instagram a:hover {
-    color: $instagram;
-}
-
-.weixin a:hover {
-    color: $weixin;
+div.instagram a,
+div.linkedin a,
+div.github a,
+div.weixin a {
+    color: $secondary-text;
 }
 
 .bottom-nav {
@@ -160,4 +133,9 @@ li {
     bottom: 0;
     width: 100%;
     margin: 2em 0em;
+    align-items: center;
 } 
+
+i.fas.fa-chevron-circle-down {
+    color: $text-icons;
+}

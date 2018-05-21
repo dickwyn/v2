@@ -8,13 +8,29 @@ footer .container {
     justify-self: center;
 }
 
+.scroll-up {
+    margin: 0em 0em 2em;
+}
+
+.scroll-up a {
+    font-family: monospace;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+i.fas.fa-caret-square-up {
+    font-size: 0.8em;
+}
+
 footer .nested {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1em;
 }
 
-footer .copyright .nested {
+footer .copyright .nested,
+footer .scroll-up .nested {
     display: grid;
     grid-template-columns: 1fr;
 }

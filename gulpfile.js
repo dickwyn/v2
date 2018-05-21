@@ -6,7 +6,9 @@ var cp = require('child_process');
 var pug = require('gulp-pug');
 var deploy = require('gulp-gh-pages');
 var htmlmin = require('gulp-htmlmin');    
-var csso = require('gulp-csso');    
+var csso = require('gulp-csso');
+var pump = require('pump');    
+var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 
 const BROWSERS = [
@@ -58,6 +60,16 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+gulp.task('uglify', function (cb) {
+    pump([
+          gulp.src('assets/js/*.js'),
+          uglify(),
+          gulp.dest('_site/assets/js')
+      ],
+      cb
+    );
+});
+
 gulp.task('pug', function(){
     return gulp.src('_pugfiles/*.pug')
         .pipe(pug())
@@ -85,6 +97,7 @@ gulp.task('imagemin', function(){
 
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
+    gulp.watch('assets/js/**', ['uglify']);
     gulp.watch(['*.html', '*.yml', '_layouts/*.html', '_includes/*', '_data/*'], ['jekyll-rebuild']);
     gulp.watch('_pugfiles/*.pug', ['pug']);
     gulp.watch('_site/*.html', ['htmlmin']);

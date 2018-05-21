@@ -1,6 +1,12 @@
 footer
     .wrapper
         .container
+            .scroll-up
+                .nested
+                    div
+                        a.btn.btn-circle.scroll(href='#hero')
+                            |   up up and away  
+                            i.fas.fa-caret-square-up
             div
                 .nested
                     |   {% for sm in site.data.social %}
@@ -11,7 +17,7 @@ footer
                         span.icon
                             a(class="{{ sm.class }} {{ sm.fa }}" href="{{ sm.url }}" target="_blank")
                     |   {% endfor %}
-            div.copyright
+            .copyright
                 .nested
                     div
                         i.fas.fa-copyright(data-fa-transform: "shrink-2")

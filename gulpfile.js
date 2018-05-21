@@ -98,7 +98,7 @@ gulp.task('imagemin', function(){
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch('assets/js/**', ['uglify']);
-    gulp.watch(['*.html', '*.yml', '_layouts/*.html', '_includes/*', '_data/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '*.yml', '_layouts/*.html', '_includes/*', '_data/*', '_assets/css/**'], ['jekyll-rebuild']);
     gulp.watch('_pugfiles/*.pug', ['pug']);
     gulp.watch('_site/*.html', ['htmlmin']);
 });

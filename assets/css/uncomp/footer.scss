@@ -8,21 +8,6 @@ footer .container {
     justify-self: center;
 }
 
-.scroll-up {
-    margin: 0em 0em 2em;
-}
-
-.scroll-up a {
-    font-family: monospace;
-    font-size: 1em;
-    text-transform: uppercase;
-    color: $primary-color;
-}
-
-i.fas.fa-caret-square-up {
-    font-size: 0.8em;
-}
-
 footer .nested {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -37,6 +22,21 @@ footer .scroll-up .nested {
 
 footer .nested div {
     justify-self: center !important;
+}
+
+.scroll-up {
+    margin: 0em 0em 2em;
+}
+
+.scroll-up a {
+    font-family: monospace;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+i.fas.fa-caret-square-up {
+    font-size: 0.8em;
 }
 
 footer a {

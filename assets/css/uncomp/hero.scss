@@ -12,6 +12,10 @@ header {
     min-height: 100vh;
 }
 
+header .container {
+    justify-self: center;
+}
+
 .top-nav {
     position: absolute;
     top: 0;
@@ -59,11 +63,11 @@ a.hidden-link:hover p {
     border-radius: 3px !important;
 }
 
-.nested {
+#hero .nested {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    margin: 0em 5em 1em;
+    margin: 0em 6.8em 1em;
 }
 
 p.name {
@@ -175,7 +179,7 @@ i.fas.fa-chevron-circle-down {
         width: 90%;
     }
 
-    .nested {
+    #hero .nested {
         margin: 0em 2em 1em;
     }
 }

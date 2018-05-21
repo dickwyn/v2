@@ -52,3 +52,9 @@ This project is built with:
     ├── index.html          # main entry point
     ├── package-lock.json
     └── package.json        # Document node dependencies
+
+## Inspiration
+
+1. [Travis Neilson](https://github.com/travisneilson/Design-Code)
+2. [shakyShane](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync)
+3. [Brittany Chiang](https://github.com/bchiang7/bchiang7.github.io)

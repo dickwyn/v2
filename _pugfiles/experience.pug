@@ -7,10 +7,10 @@ section#experience
             div
                 |   {% for experience in site.data.experiences %}
                 .resume-wrapper-nested
-                    .role
+                    .resume-subheading
                         |   {{ experience.role }}
                     .time
                         |   {{ experience.time }}  
-                    .company
+                    .resume-subsubheading
                         |   {{ experience.company }}
                 |   {% endfor %}

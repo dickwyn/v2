@@ -7,14 +7,14 @@ section#project
             div
                 |   {% for project in site.data.projects %}
                 .resume-wrapper-nested
-                    div
-                        a(href="{{ project.url }}" target="_blank")
+                    .resume-subheading  
+                        a(href="{{ project.url }}" target="_blank") 
                             |   {{ project.name }} 
                             i(class="{{ project.class }}")
-                    div
-                        p 
+                    .description
+                        p.description 
                             |   {{ project.description }}
-                    div.badge-wrapper     
+                    .badge-wrapper     
                         |   {% for tech in project.tech %} 
                         .badge   
                             p   {{ tech.item }}

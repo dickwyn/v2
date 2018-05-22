@@ -26,7 +26,7 @@
 
 - name: ASU CIS Website
   description: An informational website for the ASU Coalition of International Students. The website features an Optional Practical Training (OPT) calculator that helps students find the optimal time to send in their documents for OPT.
-  url: www.asucis.com
+  url: https://asucis.com/
   repo: https://github.com/dickwyn/cis
   tech:
     - item: Bootstrap

@@ -24,6 +24,6 @@
   fa: fab fa-twitter
 
 - name: WeChat
-  url: weixin.html
+  url: https://v1.dickwyn.xyz/weixin.html
   class: weixin
   fa: fab fa-weixin

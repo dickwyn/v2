@@ -4,12 +4,14 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var cp = require('child_process');
 var pug = require('gulp-pug');
-var deploy = require('gulp-gh-pages');
+var ghpages = require('gh-pages');
 var htmlmin = require('gulp-htmlmin');    
 var csso = require('gulp-csso');
 var pump = require('pump');    
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
+
+path = require('path');
 
 const BROWSERS = [
     'ie >= 10',
@@ -103,12 +105,8 @@ gulp.task('watch', function () {
     gulp.watch('_site/*.html', ['htmlmin']);
 });
 
-gulp.task('deploy', ['jekyll-build'], function () {
-    return gulp.src("./_site/**/*")
-        .pipe(deploy({
-            remoteUrl: "https://github.com/dickwyn/testorange-dickwyn.git",
-            branch: "gh-pages"
-        }));
+gulp.task('deploy', function(cb) {
+    ghpages.publish(path.join(process.cwd(), '_site'), cb);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);

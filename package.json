@@ -10,6 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.4",
+    "gh-pages": "^1.1.0",
+    "gift": "^0.10.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.4",
@@ -27,7 +29,5 @@
     "url": "https://github.com/dickwyn/dickwyn.github.io"
   },
   "homepage": "https://github.com/dickwyn/dickwyn.github.io",
-  "dependencies": {
-    "gift": "^0.10.2"
-  }
+  "dependencies": {}
 }

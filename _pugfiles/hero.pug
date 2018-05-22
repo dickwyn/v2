@@ -13,7 +13,8 @@ header#hero
                     p.headline Student, Blogger, Designer
                 div
                     button.blogs(onclick=" window.open('http://blog.dickwyn.xyz','_blank')" type='button')
-                        | Read my blogs
+                        i.fas.fa-align-left
+                        |  Read my blog
                 div
                     |   {% for summary in site.data.summaries.short %}
                     p.description {{ summary.item }}

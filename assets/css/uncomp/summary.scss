@@ -11,10 +11,10 @@
     background-color: transparent;
     border: 1px solid $secondary-text;
     border-radius: 5px;
-    padding: 9px 15px;
+    padding: 0.5em 1em;
     font-size: 16px;
-    margin: 1em auto 0em;
-    display: block;
+    margin: 1em 0.2em 0em;
+    display: inline-block;
 }
 
 i.far.fa-envelope {
@@ -23,6 +23,9 @@ i.far.fa-envelope {
 
 .button-wrapper {
     padding: 0em 0em 1em;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 #summary button:hover {
@@ -30,5 +33,12 @@ i.far.fa-envelope {
     color: $text-icons;
     i.far.fa-envelope {
         color: $text-icons;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #summary button {
+        margin: 0em auto 0.8em;
+        display: block;
     }
 }

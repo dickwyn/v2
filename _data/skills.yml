@@ -1,19 +1,20 @@
 languages:
   - item: Java
   - item: C#
-  - item: C/C++
+  - item: C++
   - item: SQL
-  - item: MATLAB
+  - item: HTML/CSS
   - item: Python
   - item: R
 
 frameworks:
   - item: Bootstrap
   - item: .NET
-  - item: Node
-  - item: React
-  - item: Angular
   - item: Jekyll
+  - item: Node
+  - item: Express
+  - item: Rails
+  - item: Angular
 
 tools:
   - item: Git & Github
@@ -22,11 +23,12 @@ tools:
   - item: InDesign
   - item: Axure RP
   - item: PuTTY
+  - item: Gulp
 
 interpersonal:
   - item: Conflict Resolution
-  - item: Teamwork
-  - item: Leadership
   - item: Public Speaking
+  - item: Leadership
   - item: Management
   - item: Event Planning 
+  - item: Teamwork

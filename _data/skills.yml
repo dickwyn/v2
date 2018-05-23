@@ -1,34 +1,34 @@
 languages:
   - item: Java
   - item: C#
-  - item: C++
+  - item: HTML5
+  - item: CSS/Sass
+  - item: JavaScript ES6
   - item: SQL
-  - item: HTML/CSS
-  - item: Python
-  - item: R
+  - item: C++
 
 frameworks:
+  - item: Node
   - item: Bootstrap
   - item: .NET
   - item: Jekyll
-  - item: Node
   - item: Express
-  - item: Rails
+  - item: React
   - item: Angular
 
 tools:
   - item: Git & Github
+  - item: Gulp
   - item: Photoshop
   - item: Illustrator
   - item: InDesign
   - item: Axure RP
   - item: PuTTY
-  - item: Gulp
 
-interpersonal:
-  - item: Conflict Resolution
-  - item: Public Speaking
-  - item: Leadership
-  - item: Management
-  - item: Event Planning 
-  - item: Teamwork
+platforms:
+  - item: Windows
+  - item: Android
+  - item: Raspberry Pi
+  - item: WordPress
+  - item: Amazon AWS
+  - item: Google App Engine

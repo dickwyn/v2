@@ -1,7 +1,20 @@
 header#hero
     .top-nav
-        a(href="https://www.dickwyn.xyz/" class="hidden-link")
-            p dickwyn.xyz
+        .wrapper
+            .home
+                a(href="https://www.dickwyn.xyz/" class="hidden-link")
+                    p dickwyn
+            .links
+                .nested
+                    .blog
+                        a(href="https://blog.dickwyn.xyz/" class="hidden-link")
+                            p blog
+                    .resume
+                        a(href="{{ site.resume }}" class="hidden-link")
+                            p résumé
+                    .contact
+                        a(href="mailto:dickwyn@outlook.com" class="hidden-link")
+                            p contact
     .header-body
         .container
             img(src="assets/images/dickwyn-pc.PNG" class="circle-avatar profile-picture" alt="Dick Wyn Yong") 

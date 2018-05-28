@@ -10,6 +10,7 @@ var csso = require('gulp-csso');
 var pump = require('pump');    
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
+var sitemap = require('gulp-sitemap');
 
 path = require('path');
 

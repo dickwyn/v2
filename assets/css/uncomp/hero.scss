@@ -4,14 +4,6 @@ header {
     position: relative;
 }
 
-.header-body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100%;
-    min-height: 100vh;
-}
-
 header .container {
     justify-self: center;
 }
@@ -22,8 +14,39 @@ header .container {
     width: 100%;
 }
 
+.top-nav .wrapper {
+    display: grid;
+    grid-template-columns: 20% 3% 75%;
+    grid-template-areas: 
+        "home . links";
+}
+
+.top-nav .home {
+    grid-area: home;
+}
+
+.top-nav .links {
+    grid-area: links;
+    display: grid;
+    justify-content: end;
+}
+
+.top-nav .nested {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.blog,
+.resume,
+.contact {
+    display: grid;
+    padding: 0em;
+    margin: 0em;
+    align-content: end;
+}
+
 .hidden-link p {
-    color: white;
+    color: $text-icons;
     text-decoration: none !important;
     margin: 1em;
     font-family: 'Roboto Condensed', sans-serif;
@@ -35,8 +58,18 @@ a.hidden-link {
     text-decoration: none;
 }
 
+a.hidden-link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+}
+
 a.hidden-link:hover p {
     color: $primary-color;
+}
+
+.top-nav .nested p {
+    text-align: end;
+    background-color: red;
 }
 
 .profile-picture {
@@ -54,16 +87,24 @@ a.hidden-link:hover p {
     background-size: cover;
 }
 
+.header-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
 .header-body .wrapper {
     display: grid;
-    background-color: white;
+    background-color: $text-icons;
     max-width: 629px;
     width: 100%;
     margin: auto;
     border-radius: 3px !important;
 }
 
-#hero .nested {
+.header-body .nested {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -160,6 +201,13 @@ i.fas.fa-chevron-circle-down {
 }
 
 @media screen and (max-width: 640px) {
+    .top-nav .wrapper {
+        display: grid;
+        grid-template-columns: 20% 1% 75%;
+        grid-template-areas: 
+            "home . links";
+    }
+
     .profile-picture {
         width: 128px;
         height: 128px;
@@ -181,7 +229,13 @@ i.fas.fa-chevron-circle-down {
         width: 90%;
     }
 
-    #hero .nested {
+    .header-body .nested {
         margin: 0em 2em 1em;
+    }
+}
+
+@media screen and (min-height: 640px) {
+    .bottom-nav .btn {
+        display: none;
     }
 }

@@ -58,18 +58,12 @@ a.hidden-link {
     text-decoration: none;
 }
 
-a.hidden-link:hover {
-    text-decoration: none;
-    border-bottom: 1px solid $primary-color;
-}
-
 a.hidden-link:hover p {
     color: $primary-color;
 }
 
 .top-nav .nested p {
     text-align: end;
-    background-color: red;
 }
 
 .profile-picture {
@@ -234,8 +228,12 @@ i.fas.fa-chevron-circle-down {
     }
 }
 
-@media screen and (min-height: 640px) {
+@media screen and (max-height: 640px) {
     .bottom-nav .btn {
+        display: none;
+    }
+
+    .top-nav .links {
         display: none;
     }
 }

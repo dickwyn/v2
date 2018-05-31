@@ -107,6 +107,13 @@ gulp.task('watch', function () {
 });
 
 gulp.task('deploy', function(cb) {
+    gulp.src('_site/*.html', {
+        read: false
+    })
+    .pipe(sitemap({
+        siteUrl: 'http://www.dickwyn.xyz'
+    }))
+    .pipe(gulp.dest('_site'));
     ghpages.publish(path.join(process.cwd(), '_site'), cb);
 });
 

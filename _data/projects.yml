@@ -1,3 +1,14 @@
+- name: SafeDevils
+  description: Created a web app with ExpressJS that uses the SafeTrek API to invoke emergency services when the alert button is triggered. The app aims to increase awareness of personal safety on campus
+  url:
+  repo:
+  tech:
+    - item: Node.js
+    - item: Express.js
+    - item: Pug.js
+    - item: CSS/Sass
+  class: far fa-file-code
+
 - name: SFLE Knowledgebase
   description: Designed an open sourced database (MySQL) where researchers can upload their solutions and also to design a web interface (Node.js) so that the general public can explore the solutions.
   url:
@@ -9,11 +20,13 @@
   class: far fa-file-code
 
 - name: Personal Website
-  description: The third iteration of my personal website.
-  url: https://www.dickwyn.xyz/
+  description: My personal portfolio website
+  url: https://github.com/dickwyn/dickwyn
   repo: 
   tech:
-    - item: HTML
+    - item: Node.js
+    - item: Jekyll
+    - item: Pug.js
   class: far fa-file-code
 
 - name: 2018 International Student Survey

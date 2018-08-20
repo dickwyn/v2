@@ -1,3 +1,11 @@
+- name: UAI
+  description: An adaptive learning platform for internal company trainings
+  url: 
+  repo:
+  tech:
+    - item: Python
+  class: 
+
 - name: LaTeX Resume
   description: A LaTeX template for my resume that I use for job applications.
   url: https://github.com/dickwyn/resume

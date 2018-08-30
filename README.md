@@ -58,3 +58,6 @@ This project is built with:
 1. [Travis Neilson](https://github.com/travisneilson/Design-Code)
 2. [shakyShane](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync)
 3. [Brittany Chiang](https://github.com/bchiang7/bchiang7.github.io)
+
+
+The contents of this repository are covered under the [MIT License](https://github.com/dickwyn/dickwyn/blob/master/LICENSE).

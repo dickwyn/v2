@@ -1,5 +1,17 @@
+- name: SFLE Knowledgebase
+  description: An interactive web application where users can filter and explore solutions pertaining to local food economies. Also built a scalable database using MongoDB to store data from researchers.
+  url:
+  repo:
+  tech:
+    - item: Axure RP
+    - item: MongoDB
+    - item: Express
+    - item: ReactJS
+    - item: Node.js
+  class: far fa-file-code
+
 - name: UAI
-  description: An adaptive learning platform for internal company trainings
+  description: A platform supported by adaptive learning technology that provides a personalized experience to each user. Also includes gamification and social features to boost motivation and interaction of the users.
   url: 
   repo:
   tech:
@@ -7,7 +19,7 @@
   class: 
 
 - name: LaTeX Resume
-  description: A LaTeX template for my resume that I use for job applications.
+  description: A LaTeX template for my professional resume.
   url: https://github.com/dickwyn/resume
   repo: 
   tech:
@@ -23,16 +35,6 @@
     - item: Express.js
     - item: Pug.js
     - item: SCSS
-  class: far fa-file-code
-
-- name: SFLE Knowledgebase
-  description: An interactive web application where users can filter and explore solutions pertaining to local food economies. Also built a scalable database using MySQL to store data from researchers.
-  url:
-  repo:
-  tech:
-    - item: MySQL
-    - item: Axure RP
-    - item: Node.js
   class: far fa-file-code
 
 - name: Personal Website

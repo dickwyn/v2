@@ -10,11 +10,11 @@ languages:
 frameworks:
   - item: Node
   - item: Bootstrap
-  - item: .NET
-  - item: Jekyll
   - item: Express
   - item: React
   - item: Angular
+  - item: .NET
+  - item: Jekyll
 
 tools:
   - item: Git & Github

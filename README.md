@@ -1,6 +1,6 @@
-# dickwyn.xyz
+# dickwyn.xyz v2 ⚡
 
-Dickwyn's personal website. Access it on [www.dickwyn.xyz](https://www.dickwyn.xyz/)
+Hi! Thanks for dropping by the repo for my portfolio site. This second iteration enables quicker updates on my end and drops the reliance for Bootstrap for the CSS grid. This showcases my experiences and projects but also my skills as a web developer. Access it on [www.dickwyn.xyz](https://www.dickwyn.xyz/)
 
 ## Project Dependencies
 

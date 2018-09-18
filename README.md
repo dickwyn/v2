@@ -1,6 +1,6 @@
-# dickwyn.xyz
+# dickwyn.xyz v2 ⚡
 
-Dickwyn's personal website. Access it on [www.dickwyn.xyz](https://www.dickwyn.xyz/)
+Hi! Thanks for dropping by the repo for my portfolio site. This second iteration enables quicker updates on my end and drops the reliance for Bootstrap for the CSS grid. This showcases my experiences and projects but also my skills as a web developer. Access it on [www.dickwyn.xyz](https://www.dickwyn.xyz/)
 
 ## Project Dependencies
 
@@ -58,3 +58,6 @@ This project is built with:
 1. [Travis Neilson](https://github.com/travisneilson/Design-Code)
 2. [shakyShane](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync)
 3. [Brittany Chiang](https://github.com/bchiang7/bchiang7.github.io)
+
+## License
+The contents of this repository are covered under the [MIT License](https://github.com/dickwyn/dickwyn/blob/master/LICENSE).

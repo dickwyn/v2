@@ -28,6 +28,7 @@ tools:
 platforms:
   - item: Windows
   - item: Android
+  - item: Heroku
   - item: Raspberry Pi
   - item: WordPress
   - item: Amazon AWS

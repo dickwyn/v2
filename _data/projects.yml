@@ -1,6 +1,17 @@
-- name: SFLE Knowledgebase
+- name: Recater
+  description: An online service to reducing food wasted from catering events by allowing organizations nearby to recover excess food from caterers after their service and use it to provide meals for those in need.
+  url: https://github.com/dickwyn/recater
+  repo:
+  tech:
+    - item: Java
+    - item: ReactJS
+    - item: Node.js
+  class: far fa-file-code
+
+
+- name: SLFE Knowledgebase
   description: An interactive web application where users can filter and explore solutions pertaining to local food economies. Also built a scalable database using MongoDB to store data from researchers.
-  url:
+  url: https://github.com/panza8484/capstone-slfe-knowledgebase
   repo:
   tech:
     - item: Axure RP

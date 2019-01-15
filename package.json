@@ -9,7 +9,7 @@
   "author": "Dick Wyn Yong",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.26.3",
     "gh-pages": "^1.1.0",
     "gift": "^0.10.2",
     "gulp": "^3.9.1",

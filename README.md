@@ -17,7 +17,7 @@ This project is built with:
 **Get Started**
 
 1. Clone or download this repository
-2. `$ npm install` on the directory
+2. `$ yarn` on the directory
 
 **Development Mode**
 
@@ -26,13 +26,14 @@ This project is built with:
 3. Browsersync can be accessed through `localhost:3000`
 
 **Production Mode**
+
 1. `$ gulp deploy`
 
 ## Folder Structure
 
     .
-    ├── .publish       
-    ├── _data               # YAML (.yml) files to support liquid templates 
+    ├── .publish
+    ├── _data               # YAML (.yml) files to support liquid templates
     ├── _includes           # Folder for the broken up components
     ├── _layouts            # Default layout for page types
     ├── _pugfiles           # Uncompiled .pug scripts
@@ -60,4 +61,5 @@ This project is built with:
 3. [Brittany Chiang](https://github.com/bchiang7/bchiang7.github.io)
 
 ## License
+
 The contents of this repository are covered under the [MIT License](https://github.com/dickwyn/dickwyn/blob/master/LICENSE).

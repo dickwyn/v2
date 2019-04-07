@@ -14,19 +14,18 @@ This project is built with:
 **Get Started**
 
 1. `$ gem install jekyll`
-2. `$ npm install gulp-cli -g`
-1. Clone or download this repository
-2. `$ npm install` on the directory
+2. `$ yarn add gulp-cli -g`
+3. Clone or download this repository
+4. `$ yarn` on the directory
 
 **Development Mode**
 
-1. `$ gulp pug`
-2. `$ gulp`
-3. Browsersync can be accessed through `localhost:3000`
+1. `$ yarn start`
+2. Browsersync can be accessed through `localhost:3000`
 
 **Production Mode**
 
-1. `$ gulp deploy`
+1. `$ yarn run deploy`
 
 ## Folder Structure
 

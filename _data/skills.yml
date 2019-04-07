@@ -9,9 +9,9 @@ languages:
 
 frameworks:
   - item: Node
-  - item: Bootstrap
   - item: Express
   - item: React
+  - item: React Native
   - item: Angular
   - item: .NET
   - item: Jekyll

@@ -8,31 +8,30 @@ This project is built with:
 
 1. [NodeJS](http://nodejs.org)
 2. [Ruby](https://www.ruby-lang.org/en/downloads/)
-3. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
-4. [GulpJS](https://gulpjs.com/) - `$ npm install gulp-cli -g`
-5. [PugJS](https://pugjs.org/api/getting-started.html) - `$ npm install pug`
 
 ## Running the Project
 
 **Get Started**
 
-1. Clone or download this repository
-2. `$ npm install` on the directory
+1. `$ gem install jekyll`
+2. `$ yarn add gulp-cli -g`
+3. Clone or download this repository
+4. `$ yarn` on the directory
 
 **Development Mode**
 
-1. `$ gulp pug`
-2. `$ gulp`
-3. Browsersync can be accessed through `localhost:3000`
+1. `$ yarn start`
+2. Browsersync can be accessed through `localhost:3000`
 
 **Production Mode**
-1. `$ gulp deploy`
+
+1. `$ yarn run deploy`
 
 ## Folder Structure
 
     .
-    ├── .publish       
-    ├── _data               # YAML (.yml) files to support liquid templates 
+    ├── .publish
+    ├── _data               # YAML (.yml) files to support liquid templates
     ├── _includes           # Folder for the broken up components
     ├── _layouts            # Default layout for page types
     ├── _pugfiles           # Uncompiled .pug scripts
@@ -60,4 +59,5 @@ This project is built with:
 3. [Brittany Chiang](https://github.com/bchiang7/bchiang7.github.io)
 
 ## License
+
 The contents of this repository are covered under the [MIT License](https://github.com/dickwyn/dickwyn/blob/master/LICENSE).

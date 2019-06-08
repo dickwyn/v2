@@ -8,13 +8,13 @@ languages:
   - item: C++
 
 frameworks:
-  - item: Node
-  - item: Express
   - item: React
   - item: React Native
+  - item: Node
+  - item: Express
+  - item: Jekyll
   - item: Angular
   - item: .NET
-  - item: Jekyll
 
 tools:
   - item: Git & Github

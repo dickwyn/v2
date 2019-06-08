@@ -34,7 +34,17 @@
   },
   "homepage": "https://github.com/dickwyn/dickwyn.github.io",
   "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "gulp-cli": "^2.2.0",
     "hoek": "^5.0.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }

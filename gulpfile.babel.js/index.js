@@ -1,17 +1,15 @@
-import { task, src, dest, watch, series, parallel } from 'gulp';
+import { task, src, dest, watch, series } from 'gulp';
 import browserSync from 'browser-sync';
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import cp from 'child_process';
 import pug from 'gulp-pug';
-import ghpages from 'gh-pages';
 import htmlmin from 'gulp-htmlmin';
 import csso from 'gulp-csso';
 import pump from 'pump';
 import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
-import sitemap from 'gulp-sitemap';
-import path from 'path';
+import deploy from './deploy';
 
 const BROWSERS = [
   'ie >= 10',
@@ -56,7 +54,7 @@ task('sass', () => {
     .pipe(dest('assets/css'));
 });
 
-task('uglify', function(cb) {
+task('uglify', cb => {
   pump([src('assets/js/*.js'), uglify(), dest('_site/assets/js')], cb);
 });
 
@@ -112,17 +110,6 @@ task(
   }),
 );
 
-task('deploy', function(cb) {
-  src('_site/*.html', {
-    read: false,
-  })
-    .pipe(
-      sitemap({
-        siteUrl: 'http://www.dickwyn.xyz',
-      }),
-    )
-    .pipe(dest('_site'));
-  ghpages.publish(path.join(process.cwd(), '_site'), cb);
-});
+deploy();
 
 task('default', series('browser-sync', 'watch'));

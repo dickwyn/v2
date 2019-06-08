@@ -1,17 +1,15 @@
-import { task, src, dest, watch, series, parallel } from 'gulp';
+import { task, src, dest, watch, series } from 'gulp';
 import browserSync from 'browser-sync';
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import cp from 'child_process';
 import pug from 'gulp-pug';
-import ghpages from 'gh-pages';
 import htmlmin from 'gulp-htmlmin';
 import csso from 'gulp-csso';
 import pump from 'pump';
 import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
-import sitemap from 'gulp-sitemap';
-import path from 'path';
+import deploy from './deploy';
 
 const BROWSERS = [
   'ie >= 10',
@@ -29,19 +27,19 @@ const messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
 };
 
-task('jekyll-build', function(done) {
+task('jekyll-build', done => {
   browserSync.notify(messages.jekyllBuild);
   return cp.spawn(jekyll, ['build'], { stdio: 'inherit' }).on('close', done);
 });
 
 task(
   'jekyll-rebuild',
-  series('jekyll-build', function() {
+  series('jekyll-build', () => {
     browserSync.reload();
   }),
 );
 
-task('sass', function() {
+task('sass', () => {
   return src('assets/css/main.scss')
     .pipe(
       sass({
@@ -56,17 +54,17 @@ task('sass', function() {
     .pipe(dest('assets/css'));
 });
 
-task('uglify', function(cb) {
+task('uglify', cb => {
   pump([src('assets/js/*.js'), uglify(), dest('_site/assets/js')], cb);
 });
 
-task('pug', function() {
+task('pug', () => {
   return src('_pugfiles/*.pug')
     .pipe(pug())
     .pipe(dest('_includes'));
 });
 
-task('htmlmin', function() {
+task('htmlmin', () => {
   return src('_site/*.html')
     .pipe(
       htmlmin({
@@ -77,7 +75,7 @@ task('htmlmin', function() {
     .pipe(dest('_site'));
 });
 
-task('imagemin', function() {
+task('imagemin', () => {
   return src('assets/images/pre/*')
     .pipe(
       imagemin({
@@ -89,7 +87,7 @@ task('imagemin', function() {
     .pipe(dest('assets/images'));
 });
 
-task('watch', function() {
+task('watch', () => {
   watch('assets/css/**', ['sass']);
   watch('assets/js/**', ['uglify']);
   watch(
@@ -102,7 +100,7 @@ task('watch', function() {
 
 task(
   'browser-sync',
-  series('sass', 'jekyll-build', function() {
+  series('sass', 'jekyll-build', () => {
     browserSync({
       server: {
         baseDir: '_site',
@@ -112,17 +110,6 @@ task(
   }),
 );
 
-task('deploy', function(cb) {
-  src('_site/*.html', {
-    read: false,
-  })
-    .pipe(
-      sitemap({
-        siteUrl: 'http://www.dickwyn.xyz',
-      }),
-    )
-    .pipe(dest('_site'));
-  ghpages.publish(path.join(process.cwd(), '_site'), cb);
-});
+deploy();
 
 task('default', series('browser-sync', 'watch'));

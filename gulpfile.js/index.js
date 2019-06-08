@@ -26,22 +26,25 @@ const BROWSERS = [
   'android >= 4.4',
   'bb >= 10'
 ];
+
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-jekyllBuild = (done) => {
+task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
   return cp.spawn(jekyll, ['build'], { stdio: 'inherit' })
     .on('close', done);
-};
+});
 
-jekyllRebuild = () => {
+task('jekyll-rebuild', series('jekyll-build', function () {
   browserSync.reload();
-}
+}));
 
-cssToSass = () => {
+
+
+task('sass', function () {
   return src('assets/css/main.scss')
     .pipe(sass({
       includePaths: ['css'],
@@ -52,9 +55,9 @@ cssToSass = () => {
     .pipe(dest('_site/assets/css'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(dest('assets/css'));
-}
+});
 
-uglify = cb => {
+task('uglify', function (cb) {
   pump([
     src('assets/js/*.js'),
     uglify(),
@@ -62,24 +65,24 @@ uglify = cb => {
   ],
     cb
   );
-}
+});
 
-pug = () => {
+task('pug', function () {
   return src('_pugfiles/*.pug')
     .pipe(pug())
     .pipe(dest('_includes'));
-}
+});
 
-htmlmin = () => {
+task('htmlmin', function () {
   return src('_site/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true
     }))
     .pipe(dest('_site'))
-}
+});
 
-imagemin = () => {
+task('imagemin', function () {
   return src('assets/images/pre/*')
     .pipe(imagemin({
       interlaced: true,
@@ -87,17 +90,26 @@ imagemin = () => {
       optimizationLevel: 5
     }))
     .pipe(dest('assets/images'))
-}
+})
 
-watch = () => {
+task('watch', function () {
   watch('assets/css/**', ['sass']);
   watch('assets/js/**', ['uglify']);
   watch(['*.html', '*.yml', '_layouts/*.html', '_includes/*', '_data/*', '_assets/css/**'], ['jekyll-rebuild']);
   watch('_pugfiles/*.pug', ['pug']);
   watch('_site/*.html', ['htmlmin']);
-}
+});
 
-deploy = cb => {
+task('browser-sync', series('sass', 'jekyll-build', function () {
+  browserSync({
+    server: {
+      baseDir: '_site'
+    },
+    notify: true
+  });
+}));
+
+task('deploy', function (cb) {
   src('_site/*.html', {
     read: false
   })
@@ -106,26 +118,6 @@ deploy = cb => {
     }))
     .pipe(dest('_site'));
   ghpages.publish(path.join(process.cwd(), '_site'), cb);
-}
+});
 
-browserSync = () => {
-  browserSync({
-    server: {
-      baseDir: '_site'
-    },
-    notify: true
-  });
-}
-
-exports.jekyllBuild = jekyllBuild;
-exports.jekyllRebuild = series(jekyllBuild, jekyllRebuild);
-exports.cssToSass = cssToSass;
-exports.uglify = uglify;
-exports.pug = pug;
-exports.htmlmin = htmlmin;
-exports.imagemin = imagemin;
-exports.watch = watch;
-exports.deploy = deploy;
-exports.browserSync = series(browserSync, parallel(cssToSass, jekyllBuild));
-
-exports.default = parallel(browserSync, watch);
+task('default', series('browser-sync', 'watch'));

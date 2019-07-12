@@ -11,21 +11,27 @@ This project is built with:
 
 ## Running the Project
 
-**Get Started**
+**Pre-requisites**
 
-1. `$ gem install jekyll`
-2. `$ yarn add gulp-cli -g`
-3. Clone or download this repository
-4. `$ yarn` on the directory
+```
+$ gem install jekyll
+$ yarn add gulp-cli -g
+$ git clone https://github.com/dickwyn/v2.git
+```
 
 **Development Mode**
 
-1. `$ yarn start`
-2. Browsersync can be accessed through `localhost:3000`
+```
+$ cd v2/
+$ yarn
+$ yarn start
+```
 
 **Production Mode**
 
-1. `$ yarn run deploy`
+```
+$ yarn deploy
+```
 
 ## Folder Structure
 
@@ -42,15 +48,18 @@ This project is built with:
     │   ├── images          # All images used by the project
     │   │   └── pre         # Original image files before compression
     │   └── js              # All additional scripts (.js)
+    ├── gulpfile.babel.js   # Automate compilation of pug, sass and jekyll
+    ├── _config.yml         # Stores pre-determined values
     ├── .gitattributes
     ├── .gitignore          # Folders and files that are ignored by git
+    ├── .prettierignore     # Folders and files that are ignored by prettier
+    ├── .prettierrc         # Config for prettier
     ├── CNAME               # Used for GitHub pages custom domain
-    ├── README.md           # Readme file for repository
-    ├── _config.yml         # Stores pre-determined values
-    ├── gulpfile.js         # Automate compilation of pug, sass and jekyll
     ├── index.html          # main entry point
-    ├── package-lock.json
-    └── package.json        # Document node dependencies
+    ├── LICENSE
+    ├── package.json        # Document node dependencies
+    ├── README.md           # Readme file for repository
+    └── yarn.lock           # Yarn lock file
 
 ## Inspiration
 

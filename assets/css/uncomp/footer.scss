@@ -1,148 +1,157 @@
 footer .wrapper {
-    display: grid;
-    width: 100%;
-    margin: auto;
+  display: grid;
+  width: 100%;
+  margin: auto;
 }
 
 footer .container {
-    justify-self: center;
+  justify-self: center;
 }
 
 footer .nested {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1em;
 }
 
 footer .copyright .nested,
 footer .scroll-up .nested {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 footer .nested div {
-    justify-self: center !important;
+  justify-self: center !important;
 }
 
 .scroll-up {
-    margin: 0em 0em 2em;
+  margin: 0em 0em 2em;
 }
 
 .scroll-up a {
-    font-family: monospace;
-    font-size: 1em;
-    text-transform: uppercase;
-    color: $primary-color;
+  font-family: monospace;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: $primary-color;
 }
 
 i.fas.fa-caret-square-up {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 footer a {
-    font-size: 1.5em;
-    text-decoration: none;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 footer .text a {
-    font-family: monospace;
-    text-transform: uppercase;
-    color: $text-icons;
-    font-size: 1em;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: $text-icons;
+  font-size: 1em;
 }
 
 footer .icon a {
-    color: $text-icons;
-    font-size: 1.5em;
+  color: $text-icons;
+  font-size: 1.5em;
 }
 
 .email:hover {
-    color: $primary-color;
+  color: $primary-color;
 }
 
 .twitter:hover {
-    color: $twitter;
+  color: $twitter;
 }
 
 .linkedin:hover {
-    color: $linkedin;
+  color: $linkedin;
 }
 
 .instagram:hover {
-    color: $instagram;
+  color: $instagram;
 }
 
-.github:hover { 
-    color: $github;
+.github:hover {
+  color: $github;
 }
 
 .weixin:hover {
-    color: $weixin;
+  color: $weixin;
+}
+
+.youtube:hover {
+  color: $youtube;
 }
 
 .copyright {
-    font-family: monospace;
-    text-transform: uppercase;
-    color: $text-icons;
-    margin: 2em 0em 3.8em;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: $text-icons;
+  margin: 2em 0em 3.8em;
 }
 
 i.fas.fa-copyright {
-    color: $text-icons;
-    font-size: 0.8em;
+  color: $text-icons;
+  font-size: 0.8em;
 }
 
 @media (min-width: 641px) {
-    span .email:hover {
-        text-decoration: none;
-        border-bottom: 3px $primary-color dotted;
-    }
+  span .email:hover {
+    text-decoration: none;
+    border-bottom: 3px $primary-color dotted;
+  }
 
-    span .twitter:hover {
-        text-decoration: none;
-        border-bottom: 3px $twitter dotted;
-    }
-    
-    span .linkedin:hover {
-        text-decoration: none;
-        border-bottom: 3px $linkedin dotted;
-    }
-    
-    span .instagram:hover {
-        text-decoration: none;
-        border-bottom: 3px $instagram dotted;
-    }
-    
-    span .github:hover {
-        text-decoration: none; 
-        border-bottom: 3px $github dotted;
-    }
-    
-    span .weixin:hover {
-        text-decoration: none;
-        border-bottom: 3px $weixin dotted;
-    }
-    
-    span.icon {
-        display:none
-    }
+  span .twitter:hover {
+    text-decoration: none;
+    border-bottom: 3px $twitter dotted;
+  }
 
-    span.text {
-        display:inline-block
-    }
+  span .linkedin:hover {
+    text-decoration: none;
+    border-bottom: 3px $linkedin dotted;
+  }
 
-    footer .wrapper {
-        display: grid;
-        margin: 0em 0em;
-    }
+  span .instagram:hover {
+    text-decoration: none;
+    border-bottom: 3px $instagram dotted;
+  }
+
+  span .github:hover {
+    text-decoration: none;
+    border-bottom: 3px $github dotted;
+  }
+
+  span .weixin:hover {
+    text-decoration: none;
+    border-bottom: 3px $weixin dotted;
+  }
+
+  span .youtube:hover {
+    text-decoration: none;
+    border-bottom: 3px $youtube dotted;
+  }
+
+  span.icon {
+    display: none;
+  }
+
+  span.text {
+    display: inline-block;
+  }
+
+  footer .wrapper {
+    display: grid;
+    margin: 0em 0em;
+  }
 }
 
 @media (max-width: 640px) {
-    span.icon {
-        display:inline-block;
-    }
+  span.icon {
+    display: inline-block;
+  }
 
-    span.text {
-        display:none;
-    }
+  span.text {
+    display: none;
+  }
 }

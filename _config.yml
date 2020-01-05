@@ -1,10 +1,9 @@
 # Site settings
-year: 2019
 name: Dick Wyn Yong
 title: Dick Wyn Yong | Student, Blogger, Designer
 description: Awesome description
 url: https://dickwyn.xyz
-baseurl: ""
+baseurl: ''
 email: dickwyn@outlook.com
 cover: https://www.dickwyn.xyz/img/dickwyn-pc.jpg
 logo: https://www.dickwyn.xyz/assets/images/dickwyn-emblem.png
@@ -13,4 +12,4 @@ resume: https://www.dropbox.com/s/n1qj7bfp9599lg2/resume-dick-wyn-yong.pdf?dl=0
 # Build settings
 markdown: redcarpet
 highlighter: rouge # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ['node_modules', 'gulpfile.js', 'package.json']
